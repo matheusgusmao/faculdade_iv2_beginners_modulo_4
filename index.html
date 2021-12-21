@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="dark_mode">
+    <button type="button" onclick="themedark_on()">Modo Noturno</button>
+  </div>
+  <header>
+    <h1>CADASTRO DE USUÁRIOS</h1>
+  </header>
+  <section class="box_1">
+    <form>
+      <div>
+        <label>Nome e Sobrenome<span>*</span></label>
+        <input id="nome" name="nome" required>
+      </div>
+
+      <div>
+        <label>E-mail<span>*</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label>Telefone<span>*</span></label>
+        <input type="number" id="tel" name="tel" required>
+      </div>
+
+      <div>
+        <label>CEP<span>*</span></label>
+        <input type="number" id="CEP" name="CEP" required>
+      </div>
+
+      <div>
+        <label>Rua<span>*</span></label>
+        <input id="rua" name="rua" required>
+      </div>
+
+      <div>
+        <label>Número da casa<span>*</span></label>
+        <input type="number" id="n_casa" name="n_casa" required>
+      </div>
+
+      <div>
+        <label>Complemento<span>*</span></label>
+        <div id="esconder">
+          <button onclick="show()" id="btn_hide">></button>
+        </div>
+        <input id="compl" class="hide" name="compl" required>
+      </div>
+
+      <div>
+        <label>Bairro<span>*</span></label>
+        <input id="bairro" name="bairro" required>
+      </div>
+
+      <div>
+        <label>Cidade<span>*</span></label>
+        <input id="cidade" name="cidade" required>
+      </div>
+
+      <div>
+        <label>Estado<span>*</span></label>
+        <input id="estado" name="estado" required>
+      </div>
+
+
+      <div>
+        <button onclick="cadastrarUsuario()" type="button">Cadastrar</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="box_2">
+    <div id="table">
+      <h3>
+        Usuários Cadastrados
+      </h3>
+      <p id="contador"></p>
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>CEP</th>
+            <th>Rua</th>
+            <th>Nº casa</th>
+            <th>Complemento</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Data</th>
+            <th>Remover</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

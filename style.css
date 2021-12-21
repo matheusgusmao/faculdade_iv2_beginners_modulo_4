@@ -1,0 +1,144 @@
+body {
+    background: rgb(71, 144, 240);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    /* background: rgba(255, 255, 255, 0.7); */
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+span {
+    color: red;
+}
+
+input {
+    background-color: rgb(255, 210, 128);
+}
+
+input, button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 25px;    
+}
+
+button {
+    width: 250px;
+    margin: auto;
+    background-color: rgb(68, 240, 105);
+}
+
+button:active {
+    background-color: rgb(148, 248, 169);
+}
+
+
+
+
+
+
+h3 {
+    text-align: center;
+}
+
+#table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+thead tr {
+    background-color: rgb(255, 210, 128);
+}
+
+tr {
+    text-align: center;
+    background-color: rgb(255, 251, 200);
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(255, 239, 146);
+}
+
+td, th {
+    padding: 8px;
+}
+
+#contador {
+    text-align: right;
+    color:rgb(37, 131, 58)
+}
+
+
+
+.hide {
+    display: none;
+}
+
+#btn_hide {
+    width: 30px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(59, 207, 230);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+
+img {
+    width: 30px;
+}
+
+
+tbody {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#dark_mode button{
+    background-color: rgb(79, 79, 158);
+    width: 80px;
+    padding: 2px;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
